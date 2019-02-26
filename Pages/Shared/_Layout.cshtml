@@ -16,12 +16,13 @@
               integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE="/>
     </environment>
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">Sprintspo</a>
+                <a class="navbar-brand" asp-area="" asp-page="/Index">sprintspo</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -29,7 +30,9 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a style="float:right" class="nav-link text-dark" asp-area="" onclick="vc.newQuote()"><i class="fa fa-2x fa-refresh"></i></a>
+                            <!-- <a class="nav-link text-dark" asp-area="" onclick="newQuote()"><i class="fa fa-redo"></i></a> -->
+                            <button style="background:none;border:none;cursor:pointer;" class="nav-link" asp-area="" onclick="newQuote()"><i class="fa fa-redo"></i></button>
+
                         </li>
                         <!-- <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
@@ -48,12 +51,12 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2019 - Sprintspo - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            &copy; 2019 - Sprintspo - Created by <a href="http://www.valcastillo.com">Valeria Castillo</a>
+
         </div>
     </footer>
 
     <environment include="Development">
-        <script src="~/lib/angular.min"></script>
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
     </environment>

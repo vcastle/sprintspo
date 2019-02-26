@@ -5,6 +5,9 @@ a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
+  font-weight: 600;
+  font-kerning: 5px;
+  font-variant: small-caps;
 }
 
 /* Sticky footer styles
