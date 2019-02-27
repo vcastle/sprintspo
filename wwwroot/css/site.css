@@ -48,7 +48,12 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
   /* background-color:blue; */
-  background-image: url("~/wwwroot/img/dawn_bkgd-min.jpg");
+  /* background-image: url("/wwwroot/img/dawn_bkgd-min.jpg"); */
+  background: #00c6af;
+  background: -moz-linear-gradient(top, #00c6af 10%, #960cff 100%);
+  background: -webkit-linear-gradient(top, #00c6af 10%,#960cff 100%);
+  background: linear-gradient(to bottom, #00c6af 10%,#960cff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c6af', endColorstr='#960cff',GradientType=0 );
 }
 .footer {
   position: absolute;
@@ -56,10 +61,63 @@ body {
   width: 100%;
   white-space: nowrap;
   /* Set the fixed height of the footer here */
-  height: 25px;
-  line-height: 25px; /* Vertically center the text there */
+  height: 35px;
+  line-height: 35px; /* Vertically center the text there */
 }
 
 
 /* main 
 -------------------------------------------------- */
+.text-white {
+  color:whitesmoke;
+}
+
+.text-grey {
+  color: #ccc;
+  opacity: 0.6;
+}
+
+/* quotes styles
+-------------------------------------------------- */
+#content {
+  height: 45em;
+} p {
+  max-width: 30em;
+  color: white;
+  font-family: "Proxima Nova", sans-serif;
+  letter-spacing:0.1em;
+  text-align:center;
+  margin: 40px auto;
+  text-transform: lowercase;
+  line-height: 145%;
+  font-size: 2em;
+  font-variant: small-caps;
+
+}
+
+.center{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform : translate(-50% ,-50%);
+}
+
+#date {
+  color: white;
+  font-size: 1.3em;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.2em;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+#display {
+	color: white;
+	font-size: 2.9em;
+	top: 10px;
+  border-bottom: thin solid;
+  padding-bottom: 20px;
+  opacity: 0.80;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+}

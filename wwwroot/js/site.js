@@ -33,6 +33,13 @@ var quotes = [
 // generates a new quote from array
 function newQuote() {
     // console.log(quotes[0],'— me');
-    var randomNumber = Math.floor(Math.random() * (quotes.length));
+    const randomNumber = Math.floor(Math.random() * (quotes.length));
     document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
 }
+
+//date
+function startDate() {
+    const d = new Date();
+    const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    document.getElementById("date").innerHTML = days[d.getDay()]+" | "+[d.getMonth()+1]+"/"+d.getDate()+"/"+d.getFullYear();
+  }
