@@ -30,6 +30,7 @@ var quotes = [
 
 ]
 
+// generates a new quote from array
 function newQuote() {
     // console.log(quotes[0],'— me');
     var randomNumber = Math.floor(Math.random() * (quotes.length));
