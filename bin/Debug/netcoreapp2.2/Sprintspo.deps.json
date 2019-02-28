@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "b36818a78e1460eed609d6d51b385bb3652a4f45"
+    "signature": "6e83467875e7c136322ca48d025cdeb5032b3b71"
   },
   "compilationOptions": {
     "defines": [
@@ -26,7 +26,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
-          "Microsoft.NETCore.App": "2.2.0"
+          "Microsoft.NETCore.App": "2.2.0",
+          "PexelsNet": "2.3.0"
         },
         "runtime": {
           "Sprintspo.dll": {}
@@ -204,6 +205,22 @@
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.2.0"
+        }
+      },
+      "NuGet.CommandLine/3.3.0": {},
+      "PexelsNet/2.3.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
+          "NuGet.CommandLine": "3.3.0"
+        },
+        "runtime": {
+          "lib/net452/PexelsNet.dll": {
+            "assemblyVersion": "2.3.0.0",
+            "fileVersion": "2.3.0.0"
+          }
+        },
+        "compile": {
+          "lib/net452/PexelsNet.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3275,6 +3292,20 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "NuGet.CommandLine/3.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6YrMwIwj8LJxQ/E8mgPpwb7Vt/paAeE/SiZFC3n64DkJuUT+qQV9+KEc8oVa4ko0/T595GMBVChya6u79PxLxg==",
+      "path": "nuget.commandline/3.3.0",
+      "hashPath": "nuget.commandline.3.3.0.nupkg.sha512"
+    },
+    "PexelsNet/2.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eGRg4pzDC5ruB+eNY4NlfL8VcUFZQ/LACJr7B5gJpwWJs6UDuxgtaGidMRH7FNXmglhSwKyMstMrMt2rfAF5+Q==",
+      "path": "pexelsnet/2.3.0",
+      "hashPath": "pexelsnet.2.3.0.nupkg.sha512"
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",

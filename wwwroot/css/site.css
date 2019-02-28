@@ -48,6 +48,8 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
   /* background-color:blue; */
+  background-size: cover;
+  background-repeat: no-repeat;
   background-image: url("https://source.unsplash.com/collection/2002837/1600x900");
   /* background: #00c6af;
   background: -moz-linear-gradient(top, #00c6af 10%, #960cff 100%);

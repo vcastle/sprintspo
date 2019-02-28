@@ -12119,11 +12119,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\valeria.castillo\\desktop\\personal\\personal_web_projects\\Sprintspo\\Sprintspo.csproj",
+      "projectUniqueName": "C:\\Users\\valeria.castillo\\Desktop\\Personal\\Personal_Web_Projects\\Sprintspo\\Sprintspo.csproj",
       "projectName": "Sprintspo",
-      "projectPath": "C:\\Users\\valeria.castillo\\desktop\\personal\\personal_web_projects\\Sprintspo\\Sprintspo.csproj",
+      "projectPath": "C:\\Users\\valeria.castillo\\Desktop\\Personal\\Personal_Web_Projects\\Sprintspo\\Sprintspo.csproj",
       "packagesPath": "C:\\Users\\valeria.castillo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\valeria.castillo\\desktop\\personal\\personal_web_projects\\Sprintspo\\obj\\",
+      "outputPath": "C:\\Users\\valeria.castillo\\Desktop\\Personal\\Personal_Web_Projects\\Sprintspo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
