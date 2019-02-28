@@ -101,3 +101,36 @@ function copyToClipboard(element) {
 // foreach (var image in results.Photos) {
 //     Console.WriteLine(image.Src.Medium);
 // };
+
+////unsplash
+// ES Modules syntax
+// import Unsplash from 'unsplash-js';
+ 
+// // require syntax
+// const Unsplash = require('unsplash-js').default;
+ 
+// const unsplash = new Unsplash({
+//   applicationId: "{c3e93d31f84c83ffc2ce26875f09065273e8de451fae8c1ad42cd2034bd7630e}",
+//   secret: "{a1d983208379f3fc5f120c75df8fa5629da378f1d3a9a926f33e68ee5ac74566}",
+//   headers: {
+//     "X-Custom-Header": "foo"
+//   }
+// });
+
+// const authenticationUrl = unsplash.auth.getAuthenticationUrl([
+//   "public",
+//   "read_user",
+//   "write_user",
+//   "read_photos",
+//   "write_photos"
+// ]);
+
+// location.assign(authenticationUrl);
+
+// // The OAuth code will be passed to your callback url as a querystring
+ 
+// unsplash.auth.userAuthentication(query.code)
+//   .then(toJson)
+//   .then(json => {
+//     unsplash.auth.setBearerToken(json.access_token);
+//   });
