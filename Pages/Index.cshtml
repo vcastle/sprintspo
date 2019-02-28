@@ -6,10 +6,10 @@
 
 <div id="background">
     <div class="text-center center" onload="startTime(); startDate()" >
-     
+     <div id="content">
             <div id="date"></div>
             <div id="display"></div>
-            <div id="content" class="text-center">
+            <div class="text-center">
                 <!--Quote displays here-->
                 <p id="quote">
                     "Whenever I'm about to do something, I think, 
@@ -18,8 +18,11 @@
                 </p>
                 <div>
                     <button style="background:none;border:none;cursor:pointer;" onclick="newQuote()"><i class="fa fa-redo"></i></button>
+                    <button class="copyBtn" onclick="copyToClipboard('#quote')">Copy Quote</button>
                 </div>
-            </div>
+            </div>  
+     </div>
+
 
 
     </div>

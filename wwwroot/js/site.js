@@ -38,7 +38,7 @@ function newQuote() {
     const randomNumber = Math.floor(Math.random() * (quotes.length));
     document.getElementById('quote').innerHTML = quotes[randomNumber];
     //change gradient
-    document.getElementById('background').style.backgroundColor = "red";
+    document.body.style.backgroundImage = "url('https://source.unsplash.com/collection/2002837/1600x900')";
 
 }
 
@@ -49,6 +49,7 @@ function startDate() {
     document.getElementById("date").innerHTML = days[d.getDay()]+" | "+[d.getMonth()+1]+"/"+d.getDate()+"/"+d.getFullYear();
   }
 
+  //time
   function startTime() {
     var today=new Date();
     var h=today.getHours();
@@ -80,6 +81,15 @@ function startDate() {
 function checkTime(i) {
     if (i<10) {i = "0" + i};  // add zero in front of numbers < 10
     return i;
+}
+
+//copy quote to clipboard
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
 }
 
 
