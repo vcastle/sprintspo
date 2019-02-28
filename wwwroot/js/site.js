@@ -15,6 +15,7 @@ var quotes = [
     "\"The most common way people give up their power is by thinking they don’t have any.\"<br>-  Alice Walker",
     "\"Remember that not getting what you want is sometimes a wonderful stroke of luck.\"<br>-  Dalai Lama",    
     "\"I would rather die of passion than of boredom.\"<br>-  Vincent van Gogh",
+    "\"An office is a place where dreams come true.\"<br>- Michael Scott",
     "\"A person who never made a mistake never tried anything new.\"<br>-  Albert Einstein",
     "\"If you want to lift yourself up, lift up someone else.\"<br>-  Booker T. Washington",
     "\"If you’re offered a seat on a rocket ship, don’t ask what seat! Just get on.\"<br>-  Sheryl Sandberg",    
@@ -36,6 +37,9 @@ function newQuote() {
     // console.log(quotes[0],'— me');
     const randomNumber = Math.floor(Math.random() * (quotes.length));
     document.getElementById('quote').innerHTML = quotes[randomNumber];
+    //change gradient
+    document.getElementById('background').style.backgroundColor = "red";
+
 }
 
 //date
@@ -77,3 +81,13 @@ function checkTime(i) {
     if (i<10) {i = "0" + i};  // add zero in front of numbers < 10
     return i;
 }
+
+
+//pexels
+// var client = new PexelsClient("<563492ad6f9170000100000192e7fa55845442a5a848d943857a5d52>");
+
+// var results = client.SearchAsync("business").Result; 
+
+// foreach (var image in results.Photos) {
+//     Console.WriteLine(image.Src.Medium);
+// };

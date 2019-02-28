@@ -55,6 +55,7 @@ body {
   background: linear-gradient(to bottom, #00c6af 10%,#960cff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c6af', endColorstr='#960cff',GradientType=0 );
 }
+
 .footer {
   position: absolute;
   bottom: 0;

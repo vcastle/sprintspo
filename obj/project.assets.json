@@ -2746,6 +2746,22 @@
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
       },
+      "NuGet.CommandLine/3.3.0": {
+        "type": "package"
+      },
+      "PexelsNet/2.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "8.0.2",
+          "NuGet.CommandLine": "3.3.0"
+        },
+        "compile": {
+          "lib/net452/PexelsNet.dll": {}
+        },
+        "runtime": {
+          "lib/net452/PexelsNet.dll": {}
+        }
+      },
       "Remotion.Linq/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -7378,6 +7394,31 @@
         "lib/netstandard1.3/Newtonsoft.Json.Bson.xml",
         "newtonsoft.json.bson.1.0.1.nupkg.sha512",
         "newtonsoft.json.bson.nuspec"
+      ]
+    },
+    "NuGet.CommandLine/3.3.0": {
+      "sha512": "6YrMwIwj8LJxQ/E8mgPpwb7Vt/paAeE/SiZFC3n64DkJuUT+qQV9+KEc8oVa4ko0/T595GMBVChya6u79PxLxg==",
+      "type": "package",
+      "path": "nuget.commandline/3.3.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "nuget.commandline.3.3.0.nupkg.sha512",
+        "nuget.commandline.nuspec",
+        "tools/NuGet.exe"
+      ]
+    },
+    "PexelsNet/2.3.0": {
+      "sha512": "eGRg4pzDC5ruB+eNY4NlfL8VcUFZQ/LACJr7B5gJpwWJs6UDuxgtaGidMRH7FNXmglhSwKyMstMrMt2rfAF5+Q==",
+      "type": "package",
+      "path": "pexelsnet/2.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/PexelsNet.dll",
+        "pexelsnet.2.3.0.nupkg.sha512",
+        "pexelsnet.nuspec"
       ]
     },
     "Remotion.Linq/2.2.0": {
@@ -12067,7 +12108,8 @@
     ".NETCoreApp,Version=v2.2": [
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
-      "Microsoft.NETCore.App >= 2.2.0"
+      "Microsoft.NETCore.App >= 2.2.0",
+      "PexelsNet >= 2.3.0"
     ]
   },
   "packageFolders": {
@@ -12077,11 +12119,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\valeria.castillo\\Desktop\\Personal\\Personal_Web_Projects\\Sprintspo\\Sprintspo.csproj",
+      "projectUniqueName": "C:\\Users\\valeria.castillo\\desktop\\personal\\personal_web_projects\\Sprintspo\\Sprintspo.csproj",
       "projectName": "Sprintspo",
-      "projectPath": "C:\\Users\\valeria.castillo\\Desktop\\Personal\\Personal_Web_Projects\\Sprintspo\\Sprintspo.csproj",
+      "projectPath": "C:\\Users\\valeria.castillo\\desktop\\personal\\personal_web_projects\\Sprintspo\\Sprintspo.csproj",
       "packagesPath": "C:\\Users\\valeria.castillo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\valeria.castillo\\Desktop\\Personal\\Personal_Web_Projects\\Sprintspo\\obj\\",
+      "outputPath": "C:\\Users\\valeria.castillo\\desktop\\personal\\personal_web_projects\\Sprintspo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12125,6 +12167,10 @@
             "target": "Package",
             "version": "[2.2.0, )",
             "autoReferenced": true
+          },
+          "PexelsNet": {
+            "target": "Package",
+            "version": "[2.3.0, )"
           }
         },
         "imports": [
@@ -12134,5 +12180,17 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'PexelsNet 2.3.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.2'. This package may not be fully compatible with your project.",
+      "libraryId": "PexelsNet",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.2"
+      ]
+    }
+  ]
 }
