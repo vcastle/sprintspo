@@ -58,6 +58,20 @@
     </footer>
 
     <environment include="Development">
+        
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+    apiKey: "AIzaSyA6b-FIsHX-v_oxx3fiaMjEHLyf0l7SaeY",
+    authDomain: "sprintspo.firebaseapp.com",
+    databaseURL: "https://sprintspo.firebaseio.com",
+    projectId: "sprintspo",
+    storageBucket: "sprintspo.appspot.com",
+    messagingSenderId: "302212216836"
+  };
+  firebase.initializeApp(config);
+</script>
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
     </environment>
