@@ -29,6 +29,10 @@ var quotes = [
     "\"If You Are Working On Something That You Really Care About, You Don’t Have To Be Pushed. The Vision Pulls You.\"<br>-  Steve Jobs",    
     "\"Failure Will Never Overtake Me If My Determination To Succeed Is Strong Enough.\"<br>-  Og Mandino",
     "\"Knowing Is Not Enough; We Must Apply. Wishing Is Not Enough; We Must Do.\"<br>-  Johann Wolfgang Von Goethe",
+    "\"Intelligence is the ability to adapt to change.\"<br>-  Stephen Hawking",
+    "\"Do or do not. There is no try.\"<br>-  Yoda <small><em>The Empire Strikes Back</em></small>",
+    "\"When we strive to become better than we are, everything around us becomes better too.\"<br>-  Paulo Coelho <small><em>The Alchemist</em></small>",
+    "\"Intelligence without ambition is a bird without wings.\"<br>-  Salvador Dali",
 
 ]
 
@@ -38,7 +42,18 @@ function newQuote() {
     const randomNumber = Math.floor(Math.random() * (quotes.length));
     document.getElementById('quote').innerHTML = quotes[randomNumber];
     //change gradient
-    document.body.style.backgroundImage = "url('https://source.unsplash.com/collection/2002837/1600x900')";
+
+
+    fetch('https://source.unsplash.com/collection/2002837/1600x900')
+               .then(data => {
+                   console.log('data:', data)
+                    //  document.body.style.backgroundImage = "url(data.url)";
+                     document.getElementById('bod').style.backgroundImage = `url(${data.url})`;
+                     //var oldway = "url" + "(" + data.url + ")"
+               })
+
+
+
 
 }
 
