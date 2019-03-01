@@ -46,7 +46,7 @@ function newQuote() {
 
     fetch('https://source.unsplash.com/collection/2002837/1600x900')
                .then(data => {
-                   console.log('data:', data)
+                   //console.log('data:', data)
                     //  document.body.style.backgroundImage = "url(data.url)";
                      document.getElementById('bod').style.backgroundImage = `url(${data.url})`;
                      //var oldway = "url" + "(" + data.url + ")"
