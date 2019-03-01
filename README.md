@@ -1,3 +1,0 @@
-# sprintspo
-# sprintspo
-# sprintspo
